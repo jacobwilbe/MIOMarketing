@@ -14,19 +14,19 @@ import { PricingCard } from './components/PricingCard';
 
 const artists = [
   {
-    name: "Sarah Chen",
+    name: "Sweezy",
     image: "https://images.unsplash.com/photo-1516575334481-f85287c2c82d?auto=format&fit=crop&q=80&w=400&h=400",
-    growth: "2.5M+ streams in 6 months"
+    growth: "100k+ Monthly Listeners"
   },
   {
-    name: "Marcus Rivera",
+    name: "Mills",
     image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=400&h=400",
-    growth: "Featured on Billboard Hot 100"
+    growth: "300k+ Monthly Listeners"
   },
   {
-    name: "Luna Collective",
+    name: "Ant3x",
     image: "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?auto=format&fit=crop&q=80&w=400&h=400",
-    growth: "1M+ TikTok followers"
+    growth: "30k+ Instagram Followers"
   }
 ];
 
@@ -89,15 +89,19 @@ export function App() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient">
             TURN YOUR SOUND INTO SUCCESS
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto font-light">
+          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto font-semibold">
             We transform talented artists into industry sensations through strategic promotion and brand development
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="bg-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition flex items-center justify-center tracking-wider">
+            <button 
+              onClick={() => document.getElementById('consult')?.scrollIntoView({behavior: 'smooth'})}
+              className="bg-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition flex items-center justify-center tracking-wider">
               START YOUR JOURNEY <ChevronRight className="ml-2" />
             </button>
-            <button className="border border-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-600/20 transition flex items-center justify-center tracking-wider">
-              WATCH SUCCESS STORIES <Play className="ml-2 w-4 h-4" />
+            <button  
+              onClick={() => document.getElementById('success')?.scrollIntoView({behavior: 'smooth'})}
+              className="border border-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-600/20 transition flex items-center justify-center tracking-wider">
+              SEE SUCCESS STORIES <Play className="ml-2 w-4 h-4" />
             </button>
           </div>
         </div>
@@ -162,7 +166,7 @@ export function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-purple-900/20">
+      <section id="consult" className="py-20 bg-purple-900/20">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold mb-6 text-gradient">READY TO MAKE IT OUT?</h2>
           <p className="text-xl text-gray-300 mb-8 font-light">

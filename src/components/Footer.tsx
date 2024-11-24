@@ -23,11 +23,11 @@ export function Footer() {
               <li><a href="#contact" className="hover:text-purple-400 transition font-light">Contact</a></li>
             </ul>
           </div>
-          <div>
+          <div id="contact">
             <h4 className="font-display font-bold mb-4 tracking-wider">CONTACT</h4>
             <ul className="space-y-2 text-gray-400 font-light">
               <li>makeitoutmarketing@gmail.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>+1 (302) 359-1710</li>
               <li>Los Angeles, CA</li>
             </ul>
           </div>
