@@ -80,7 +80,7 @@ export function App() {
             alt="Background" 
             className="w-full h-full object-cover opacity-450"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black"></div>
         </div>
         
         <Navbar />
