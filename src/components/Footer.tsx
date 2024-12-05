@@ -36,7 +36,7 @@ export function Footer() {
               <a href="https://www.instagram.com/miomarketingg/" className="text-gray-400 hover:text-purple-400 transition">
                 <FaInstagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition">
+              <a href="https://www.tiktok.com/@miomarketing" className="text-gray-400 hover:text-purple-400 transition">
                 <FaTiktok className="w-6 h-6" />
               </a>
             </div>
