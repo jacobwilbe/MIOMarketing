@@ -1,4 +1,4 @@
-import React from 'react';
+
 import background from '/fabio-alves-MyDBrmO9VN4-unsplash.jpg';
 import { 
   Play, 
@@ -33,7 +33,6 @@ const artists = [
 const pricingPlans = [
   {
     title: "Gold",
-    price: "199",
     features: [
       "Social Media Strategy",
       "Basic Playlist Pitching",
@@ -44,7 +43,6 @@ const pricingPlans = [
   },
   {
     title: "Platinum",
-    price: "299",
     features: [
       "Advanced Playlist Pitching",
       "PR Campaign",
@@ -57,7 +55,6 @@ const pricingPlans = [
   },
   {
     title: "Diamond",
-    price: "399",
     features: [
       "Full-Service Management",
       "Major Playlist Campaign",
@@ -70,6 +67,8 @@ const pricingPlans = [
 ];
 
 export function App() {
+  
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
@@ -172,7 +171,7 @@ export function App() {
           <p className="text-xl text-gray-300 mb-8 font-light">
             Join the ranks of successful artists who've transformed their careers with us
           </p>
-          <button className="bg-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition tracking-wider">
+          <button className="bg-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition tracking-wider" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeF-ci6WvuBRxZ0H7V0GwOJEIqKUWBDcuHRroxiutS45ZYWmw/viewform?usp=header', '_blank')}>
             SCHEDULE A CONSULTATION
           </button>
         </div>

@@ -1,6 +1,5 @@
-import React from 'react';
-import { Instagram, Twitter, Youtube } from 'lucide-react';
 import icon from '/icon-3.png';
+import { FaTiktok, FaInstagram } from 'react-icons/fa';
 
 export function Footer() {
   return (
@@ -35,13 +34,10 @@ export function Footer() {
             <h4 className="font-display font-bold mb-4 tracking-wider">FOLLOW US</h4>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/miomarketingg/" className="text-gray-400 hover:text-purple-400 transition">
-                <Instagram className="w-6 h-6" />
+                <FaInstagram className="w-6 h-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-purple-400 transition">
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition">
-                <Youtube className="w-6 h-6" />
+                <FaTiktok className="w-6 h-6" />
               </a>
             </div>
           </div>

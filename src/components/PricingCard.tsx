@@ -3,12 +3,11 @@ import { Check } from 'lucide-react';
 
 interface PricingCardProps {
   title: string;
-  price: string;
   features: string[];
   isPopular?: boolean;
 }
 
-export function PricingCard({ title, price, features, isPopular }: PricingCardProps) {
+export function PricingCard({ title, features, isPopular }: PricingCardProps) {
   return (
     <div className={`relative bg-purple-900/20 rounded-2xl p-8 backdrop-blur-sm ${isPopular ? 'border-2 border-purple-500' : ''}`}>
       {isPopular && (
@@ -17,10 +16,6 @@ export function PricingCard({ title, price, features, isPopular }: PricingCardPr
         </span>
       )}
       <h3 className="text-2xl font-bold mb-4 tracking-wider">{title.toUpperCase()}</h3>
-      <div className="mb-6">
-        <span className="text-4xl font-bold">${price}</span>
-        <span className="text-gray-400 font-light">/month</span>
-      </div>
       <ul className="space-y-4 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center space-x-3">
@@ -33,7 +28,7 @@ export function PricingCard({ title, price, features, isPopular }: PricingCardPr
         isPopular 
           ? 'bg-purple-600 hover:bg-purple-700 text-white' 
           : 'border border-purple-600 hover:bg-purple-600/20'
-      }`}>
+      }`} onClick={() => document.getElementById('consult')?.scrollIntoView({behavior: 'smooth'})}>
         GET STARTED
       </button>
     </div>
